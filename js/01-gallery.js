@@ -1,7 +1,7 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 const container = document.querySelector(".gallery");
-
+////rendering
 function createMarkup(arr) {
   return arr
     .map(
@@ -31,7 +31,7 @@ function handlerImgClick(event) {
   const { source, alt: description } = event.target.dataset;
   showImgModal({ original: source, preview: source, description });
 }
-
+//modal
 function showImgModal({ preview, original, description }) {
   const instance = basicLightbox.create(
     `
@@ -42,6 +42,7 @@ function showImgModal({ preview, original, description }) {
         alt="${description}"
        
       />`,
+    //Escape keydown
     {
       handler: null,
       onShow(instance) {

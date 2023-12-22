@@ -1,7 +1,7 @@
 import { galleryItems } from "./gallery-items.js";
 
 const container = document.querySelector(".gallery");
-
+//rendering
 function createMarkup(arr) {
   return arr
     .map(
